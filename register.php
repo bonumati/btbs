@@ -2,7 +2,6 @@
 	require("connection.php");
 	session_start();
 	$errors = array();
-	 $panerr ="";
 	 $emailerr = "";
 	if($_SERVER["REQUEST_METHOD"]=="POST"){
 
@@ -12,33 +11,24 @@
       }  
       	else{
 		   $myusername = $_POST['usname'];
-		//    $pan_no     = $_POST['pno'];
     	   $mobileno   = $_POST['mobno'];
     	   $email      = $_POST['email'];
 		   $mypassword = $_POST['pssw'];
 		   $address    = $_POST['address'];
 		   $pincode    = $_POST['pincode'];
 
-    	   $panerr ="";
+    	   
 
     	    $user_check_query = "SELECT * FROM user WHERE  email_id ='$email' ";
 
     	    $result = mysqli_query($conn, $user_check_query);
  			 $user = mysqli_fetch_array($result);
-
- 			//   if ($user['pancard_no'] == $pan_no) {
-			//       $panerr = "Pancard Already Exists";
-			//       array_push($errors, "Pancard");
-
-			     
-			//     }
-
 			    if ($user['email_id'] == $email) {
 			    	$emailerr = "Email Already Exists";
 			      	array_push($errors, "Email");
 			    }
 			    	   if (count($errors) == 0) {
-			  	// $password = md5($mypassword);//encrypt the password before saving in the database
+			  
 
 			  	$query = "INSERT INTO user (username, mobile_no, email_id, password, address, pincode) VALUES('$myusername','$mobileno', '$email', '$mypassword','$address','$pincode')";
 			  mysqli_query($conn, $query);

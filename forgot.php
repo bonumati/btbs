@@ -77,24 +77,5 @@
 </div>
 </div>
 
-
-
-<!-- <script>
-function ValidatePAN() { 
-  var Obj = document.getElementById("textPanNo");
-        if (Obj.value != "") {
-            ObjVal = Obj.value;
-            var panPat =  /^([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}?$/;
-            if (ObjVal.search(panPat) == -1) {
-                Obj.setCustomValidity( Obj.value + "' is not a valid Pancard No. Enter Correct one");
-                
-            }
-          else
-            {
-              Obj.setCustomValidity("");
-              }
-        }
-  }
-</script> -->
 </body>
 </html>

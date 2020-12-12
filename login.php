@@ -6,7 +6,7 @@
 			$email = $_POST['email'];
     		$mypassword = $_POST['psw'];
     	
-			// $password = md5($mypassword); //encrypt the password before auth in the database
+			
     		 $query = "SELECT * FROM user WHERE email_id = '$email' and password = '$mypassword' ";
 
     		$run = mysqli_query($conn, $query) or die(mysqli_error());

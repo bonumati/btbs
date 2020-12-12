@@ -6,21 +6,6 @@ if(isset($_SESSION['id']))
     $uid=  $_SESSION['id'];
     $query = "SELECT bookingId, source, destination, type, notes, totalFare, date From bookings WHERE (userID='$uid')";
     $run = mysqli_query($conn, $query);
-    // echo "<table border='1'>
-    // <tr>
-    // <th>Firstname</th>
-    // <th>Lastname</th>
-    // </tr>";
-
-    // while($row = mysqli_fetch_array($run))
-    // {
-    // echo "<tr>";
-    // echo "<td>" . $row['source'] . "</td>";
-    // echo "<td>" . $row['destination'] . "</td>";
-    // echo "</tr>";
-    // }
-    // echo "</table>";
-
 }
 else
 {
@@ -133,31 +118,5 @@ tr:nth-child(even) {
 		</div>
         <!--//footer-->
 	<!-- </div> -->
-	<!-- Classie -->
-		<script src="js/classie.js"></script>
-		<script>
-			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-				showLeftPush = document.getElementById( 'showLeftPush' ),
-				body = document.body;
-				
-			showLeftPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toright' );
-				classie.toggle( menuLeft, 'cbp-spmenu-open' );
-				disableOther( 'showLeftPush' );
-			};
-			
-
-			function disableOther( button ) {
-				if( button !== 'showLeftPush' ) {
-					classie.toggle( showLeftPush, 'disabled' );
-				}
-			}
-		</script>
-
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/scripts.js"></script>
-
-   <script src="js/bootstrap.js"> </script>
 </body>
 </html>
