@@ -1,0 +1,59 @@
+html,body{
+	height: 100%;
+	margin: 0px
+}
+
+#background_img{
+  	display: flex;
+	height: 100%;
+	align-items: center;
+	width: 100%;
+	background-color: black;	
+	background-image: url("../img/login_bg.png");
+	background-size: cover;
+	background-position: center;
+
+}
+
+#login_wrapper{
+	width: 90%;
+	max-width: 500px;
+	height: 500px;
+	margin-top:0px;
+	margin-right:auto;
+	margin-bottom: 0px;
+	margin-left:auto;  
+	background-color:white;
+}
+.head{
+	color: white;
+	text-align: center;
+}
+.container{
+	color: white;
+	padding: 16px;
+
+	
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+.b1{
+  background-color: #664caf;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 16px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+button:hover {
+  opacity: 0.8;
+}
