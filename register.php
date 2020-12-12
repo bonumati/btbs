@@ -42,7 +42,7 @@
 		 	while ($row = $run->fetch_assoc()) {
   			  $_SESSION['id'] =$row['id'];
 
-		header("location: home.php");
+		header("location: index.php");
 			  }
 			}
 
