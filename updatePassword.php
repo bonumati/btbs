@@ -109,7 +109,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
 		<!--footer-->
 		<div class="footer">
-		   <p>&copy; DSM 2020</a></p>
+		   <p>&copy;  BUS BOOKING SYSTEM 2020</a></p>
 		</div>
         <!--//footer-->
 	</div>

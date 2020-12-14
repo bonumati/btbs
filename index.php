@@ -95,25 +95,25 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			var strType = el.value;
 			var amount;
 			if(strDest == 'Vadodara' && strType == 'NON-AC'){
-				amount = 900;
+				amount = "900";
 			}else if(strDest == 'Jaipur' && strType == 'NON-AC'){
-				amount = 1100;
+				amount = "1100";
 			}else if(strDest == 'Delhi' && strType == 'NON-AC'){
-				amount = 2000;
+				amount = "2000";
 			}else if(strDest == 'Goa' && strType == 'NON-AC'){
-				amount = 700;
+				amount = "700";
 			}else if(strDest == 'Ahmedabad' && strType == 'NON-AC'){
-				amount = 1000;
+				amount = "1000";
 			}else if(strDest == 'Vadodara' && strType == 'AC'){
-				amount = 1000;
+				amount = "1000";
 			}else if(strDest == 'Jaipur' && strType == 'AC'){
-				amount = 1300;
+				amount = "1300";
 			}else if(strDest == 'Delhi' && strType == 'AC'){
-				amount = 2500;
+				amount = "2500";
 			}else if(strDest == 'Goa' && strType == 'AC'){
-				amount = 850;
+				amount = "850";
 			}else if(strDest == 'Ahmedabad' && strType == 'AC'){
-				amount = 1200;
+				amount = "1200";
 			}
 			
 			document.getElementById("mytext").value = amount;
@@ -166,7 +166,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="form-group">
 				<label for="formGroupExampleInput">Total Fare</label>
-				<input type="text" class="form-control" id="mytext" name="tmt" value="" disabled>
+				<input type="text" class="form-control" id="mytext" name="tmt" value="" readonly >
 			</div>
 			<div class="form-group">
 				<button type="submit" class="b1">Submit</button>
